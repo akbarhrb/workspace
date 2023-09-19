@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{name}}</title>
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+</head>
+<body>
+    <h1 class="text-light bg-primary text-center p-3 ">ALI AKBAR WORKSPACE</h1>
+    
+        <div class="row">
+            <a class="col btn btn-outline-primary" href="{% url 'home' %}">HOME</a>
+            <a class="col btn btn-outline-primary" href="{% url 'scout' %}">SCOUT</a>
+            <a class="col btn btn-outline-primary" href="{% url 'economy' %}">ECONOMY</a>
+            <a class="col btn btn-outline-primary" href="{% url 'tasks' %}">TASKS</a>
+            
+    </div>
+    {% block body %}
+    
+    {% endblock %}
+</body>
+</html>
